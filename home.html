@@ -94,19 +94,19 @@
           <img src="./assets/opt-3.png" alt="" />
           <p class="font-normal text-sm text-neutral/70">Transfer Money</p>
         </button>
-        <button
+        <button id="getBonus"
           class="btn btn-soft btn-primary flex flex-col h-full justify-center items-center px-2.5 py-5 rounded-xl border border-neutral/10"
         >
           <img src="./assets/opt-4.png" alt="" />
           <p class="font-normal text-sm text-neutral/70">Get Bonus</p>
         </button>
-        <button
+        <button id="payBill"
           class="btn btn-soft btn-primary flex flex-col h-full justify-center items-center px-2.5 py-5 rounded-xl border border-neutral/10"
         >
           <img src="./assets/opt-5.png" alt="" />
           <p class="font-normal text-sm text-neutral/70">Pay Bill</p>
         </button>
-        <button
+        <button id="transactionHistory"
           class="btn btn-soft btn-primary flex flex-col h-full justify-center items-center px-2.5 py-5 rounded-xl border border-neutral/10"
         >
           <img src="./assets/opt-6.png" alt="" />
@@ -287,7 +287,7 @@
         </div>
       </section>
 
-      <section id="add-money" class="bg-[#F4F5F7]">
+      <section id="get-bonus" class="bg-[#F4F5F7]">
         <div class="w-11/12 mx-auto">
           <h2 class="font-semibold text-lg py-4">Get Bonus</h2>
           <div class="form pb-5">
@@ -318,6 +318,90 @@
           </div>
         </div>
       </section>
+
+      <section id="pay-bill" class="bg-[#F4F5F7]">
+        <div class="w-11/12 mx-auto">
+          <h2 class="font-semibold text-lg py-4">Pay Bill</h2>
+          <div class="form pb-5">
+            <div
+              class="card bg-base-100 w-full rounded-3xl"
+            >
+              <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Select A Bank</label
+                  >
+                    <select id="pay-money-bank" class="select w-full rounded-[32px] bg-[#F4F5F7] border-none mb-4 font-light">
+                        <option disabled selected>Select Bank</option>
+                        <option value="City Bank">City Bank</option>
+                        <option value="DBBL">DBBL</option>
+                        <option value="Trust Bank">Trust Bank</option>
+                    </select>
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Biller Account Number</label
+                  >
+                  <input
+                    id="pay-bill-number"
+                    maxlength="11"
+                    type="text"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none mb-4 font-light w-full"
+                    placeholder="Enter account number"
+                  />
+
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Amount to Pay</label
+                  >
+                  <input
+                    id="pay-bill-amount"
+                    maxlength="11"
+                    type="number"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none mb-4 font-light w-full"
+                    placeholder="Enter amount to pay"
+                  />
+
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Pin Number</label
+                  >
+                  <input
+                    id="pay-bill-pin"
+                    maxlength="4"
+                    type="password"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none font-light w-full"
+                    placeholder="Enter 4 digit pin number"
+                  />
+
+                  <button
+                    id="pay-bill-btn"
+                    class="btn btn-primary mt-4 rounded-[32px] text-base text-white"
+                  >
+                    Pay Now
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="transactions" class="w-11/12 mx-auto">
+        <h2 class="font-semibold text-lg py-4">Transaction History</h2>
+        <div class="" id="history-container">
+            <!-- <div class="transaction-card px-4 py-3 bg-base-100 mb-4 w-full border border-neutral/20 flex items-center">
+            
+                <div class="flex items-center gap-2">
+                    <div class="wrapper w-[45px] h-[45px] rounded-full bg-[#080808]/10 flex items-center justify-center"> <img src="../assets/opt-1.png" alt="" /> </div>
+                    <div class="details">
+                        <h3 class="font-semibold text-base text-neutral/70"> Bank Deposit </h3>
+                        <p class="text-xs font-normal text-neutral/70"> Today at  </p>
+                    </div>
+                </div>
+            
+                <div class="ml-auto h-6 w-6 flex items-center justify-center text-neutral/50">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div> -->
+        </div>
+      </section>
     </main>
 
     <script src="./js/machine.js"></script>
@@ -325,5 +409,8 @@
     <script src="./js/cashOut.js"></script>
     <script src="./js/transferMoney.js"></script>
     <script src="./js/getBonus.js"></script>
+    <script src="./js/payBill.js"></script>
+    <script src="./js/transaction.js"></script>
+
   </body>
 </html>
