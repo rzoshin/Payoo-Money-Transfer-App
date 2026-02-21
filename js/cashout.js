@@ -1,3 +1,7 @@
+document.getElementById("cashOut").addEventListener("click", function(){
+    showOnly("cashout");
+});
+
 const cashOutEvent = document.getElementById("cashout-btn");
 
 cashOutEvent.addEventListener("click", function () {
