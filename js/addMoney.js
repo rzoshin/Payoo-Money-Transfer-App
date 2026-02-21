@@ -48,7 +48,7 @@ addMoneybtn.addEventListener("click", function(){
         <div class="transaction-card px-4 py-3 bg-base-100 mb-4 w-full flex items-center">
             
                 <div class="flex items-center gap-2">
-                    <div class="wrapper w-[45px] h-[45px] rounded-full bg-[#080808]/10 flex items-center justify-center"> <img src="../assets/opt-1.png" alt="" /> </div>
+                    <div class="wrapper w-[45px] h-[45px] rounded-full bg-[#080808]/10 flex items-center justify-center"> <img src="assets/opt-1.png" alt="" /> </div>
                     <div class="details">
                         <h3 class="font-semibold text-base text-neutral/70"> Bank Deposit </h3>
                         <p class="text-xs font-normal text-neutral/70"> Today at ${new Date().toLocaleTimeString()} </p>
