@@ -88,7 +88,7 @@
           <img src="./assets/opt-2.png" alt="" />
           <p class="font-normal text-sm text-neutral/70">Cashout</p>
         </button>
-        <button
+        <button id="transferMoney"
           class="btn btn-soft btn-primary flex flex-col h-full justify-center items-center px-2.5 py-5 rounded-xl border border-neutral/10"
         >
           <img src="./assets/opt-3.png" alt="" />
@@ -232,11 +232,98 @@
         </div>
       </section>
 
-      
+      <section id="transfer-money" class="bg-[#F4F5F7]">
+        <div class="w-11/12 mx-auto">
+          <h2 class="font-semibold text-lg py-4">Transfer Money</h2>
+          <div class="form pb-5">
+            <div
+              class="card bg-base-100 w-full rounded-3xl"
+            >
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >User Account Number</label
+                  >
+                  <input
+                    id="transfer-number"
+                    maxlength="11"
+                    type="text"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none mb-4 font-light w-full"
+                    placeholder="Enter 11 digit number"
+                  />
+
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Amount</label
+                  >
+                  <input
+                    id="transfer-amount"
+                    maxlength="11"
+                    type="number"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none mb-4 font-light w-full"
+                    placeholder="Enter amount to transfer"
+                  />
+
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Pin Number</label
+                  >
+                  <input
+                    id="transfer-pin"
+                    maxlength="4"
+                    type="password"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none font-light w-full"
+                    placeholder="Enter 4 digit pin number"
+                  />
+
+                  <button
+                    id="transfer-btn"
+                    class="btn btn-primary mt-4 rounded-[32px] text-base text-white"
+                  >
+                    Send Now
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="add-money" class="bg-[#F4F5F7]">
+        <div class="w-11/12 mx-auto">
+          <h2 class="font-semibold text-lg py-4">Get Bonus</h2>
+          <div class="form pb-5">
+            <div
+              class="card bg-base-100 w-full rounded-3xl"
+            >
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Enter Bonus Coupon</label
+                  >
+                  <input
+                    id="add-money-account-number"
+                    type="text"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none mb-4 font-light w-full"
+                    placeholder="Enter your coupon"
+                  />
+
+                  <button
+                    id="add-money-btn"
+                    class="btn btn-primary mt-4 rounded-[32px] text-base text-white"
+                  >
+                    Get Bonus
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="./js/machine.js"></script>
     <script src="./js/addMoney.js"></script>
     <script src="./js/cashOut.js"></script>
+    <script src="./js/transferMoney.js"></script>
+    <script src="./js/getBonus.js"></script>
   </body>
 </html>
