@@ -115,6 +115,69 @@
         </button>
       </section>
 
+      <section id="add-money" class="bg-[#F4F5F7]">
+        <div class="w-11/12 mx-auto">
+          <h2 class="font-semibold text-lg py-4">Add Money</h2>
+          <div class="form pb-5">
+            <div
+              class="card bg-base-100 w-full rounded-3xl"
+            >
+              <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Select A Bank</label
+                  >
+                    <select id="add-money-bank" class="select w-full rounded-[32px] bg-[#F4F5F7] border-none mb-4 font-light">
+                        <option disabled selected>Select Bank</option>
+                        <option value="City Bank">City Bank</option>
+                        <option value="DBBL">DBBL</option>
+                        <option value="Trust Bank">Trust Bank</option>
+                    </select>
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Bank Account Number</label
+                  >
+                  <input
+                    id="add-money-account-number"
+                    maxlength="11"
+                    type="text"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none mb-4 font-light w-full"
+                    placeholder="Enter 11 digit account number"
+                  />
+
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Amount to Add</label
+                  >
+                  <input
+                    id="add-money-amount"
+                    type="number"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none mb-4 font-light w-full"
+                    placeholder="Add amount to deposit"
+                  />
+
+                  <label class="label font-medium text-base text-neutral/70 mb-2"
+                    >Pin Number</label
+                  >
+                  <input
+                    id="add-money-pin"
+                    maxlength="4"
+                    type="password"
+                    class="input rounded-[32px] bg-[#F4F5F7] border-none font-light w-full"
+                    placeholder="Enter 4 digit pin number"
+                  />
+
+                  <button
+                    id="add-money-btn"
+                    class="btn btn-primary mt-4 rounded-[32px] text-base text-white"
+                  >
+                    Add Money
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="cashout" class="bg-[#F4F5F7]">
         <div class="w-11/12 mx-auto">
           <h2 class="font-semibold text-lg py-4">Cash Out</h2>
@@ -171,7 +234,7 @@
       </section>
     </main>
 
-
+    <script src="./js/machine.js"></script>
     <script src="./js/cashout.js"></script>
   </body>
 </html>
